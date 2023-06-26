@@ -1,0 +1,426 @@
+/* Body css */
+body {
+
+    background-color: rgb(62, 61, 61);
+}
+
+/* Barre de navigation css */
+.Bar-nav {
+
+    list-style-type: none;
+    /* Enleve les point au debut des li */
+    background-color: rgb(180, 180, 180);
+    overflow: hidden;
+    margin: 2%;
+    display: flex;
+    /* Active la flexBox */
+    justify-content: center;
+    /* Centre la flex box au milieu */
+    border-radius: 10px;
+    /* Arrondie les coins de 10 pixel */
+}
+
+.Bar-nav-items {
+
+    float: left;
+    /* align tout les li */
+    margin: 5px;
+    /* Met une marge de 5 pixel */
+    font-size: xx-large;
+    /* Agrandi le text au maxmum */
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+/* Quand la souris passe sur les balises li */
+.Bar-nav-items:hover {
+
+    background-color: rgb(80, 58, 58);
+    border-radius: 10px;
+    /* Arrondie les coins de 10 pixel */
+}
+
+/* Fin barre de navigation css */
+
+/* Profil css */
+
+.profil {
+
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+}
+
+.profil-titre {
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.profil-container {
+
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 3%;
+}
+
+.profil-img-pp {
+
+    margin: 20px;
+    max-width: 40%;
+    max-height: 15%;
+    border-radius: 50%;
+}
+
+.profil-text {
+
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.profil-btn {
+
+    background-color: rgb(180, 180, 180);
+    border-radius: 15%;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.profil-btn:hover {
+
+    background-color: rgb(80, 58, 58);
+}
+
+/* Fin profil css */
+
+/* Langages css */
+
+.Langages {
+
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.langages-titre {
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.langages-parent-cercle {
+
+    list-style-type: none;
+    display: flex;
+    /* Active la flexBox */
+    justify-content: center;
+    /* Centre la flex box au milieu */
+    padding-bottom: 3%;
+}
+
+.langages-cercle {
+
+    font-size: 60px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 150px;
+    margin: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+
+}
+
+.langages-icone {
+
+    position: absolute;
+    opacity: 1;
+
+}
+
+.langages-numero {
+
+    position: absolute;
+    opacity: 0;
+}
+
+.langages-cercle:hover .langages-numero {
+
+    opacity: 1;
+
+}
+
+.langages-cercle:hover .langages-icone {
+
+    opacity: 0;
+    transition: opacity 0.5s;
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fin langages css */
+
+/* Framework css */
+
+.framework {
+
+    background-color: rgb(180, 180, 180);
+    margin-top: 25px;
+
+
+}
+
+.framework-titre {
+
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.framework-parent {
+
+    list-style-type: none;
+    align-items: center;
+    padding-left: 23%;
+    padding-bottom: 5%;
+
+}
+
+.framework-icone {
+
+    margin-left: 1%;
+    font-size: 30px;
+    margin-top: 1%;
+
+}
+
+.framework-text {
+
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+
+}
+
+.framework-base {
+
+    align-items: center;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 60em;
+    height: 2em;
+    border-radius: 0.5em;
+    position: relative;
+    background: #f2f2f2;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Sers a ne pas sortir de la barre */
+
+}
+
+.framework-barre {
+
+    position: relative;
+    font-size: 1em;
+    background: tomato;
+    height: 1em;
+    border-radius: 0.5em;
+    transition: width 0.5s ease-in-out;
+
+}
+
+.framework-base .framework-barre {
+
+    position: relative;
+    font-size: 1em;
+    background: #330033;
+    height: 2em;
+    border-radius: 0.5em;
+    animation: progress-animation 3s ease-in-out forwards;
+    /* Utilisation de l'animation */
+
+}
+
+/* Animation pour la progression */
+@keyframes progress-animation {
+    0% {
+        width: 0;
+    }
+}
+
+/* Fin framework css */
+
+/* Compétences css */
+
+.competences {
+
+    background-color: rgb(180, 180, 180);
+    margin-top: 25px;
+
+
+}
+
+.competences-titre {
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+/* Fin compétences css */
+
+/* Projets css */
+
+.projets {
+
+    background-color: rgb(180, 180, 180);
+    margin-top: 25px;
+
+
+}
+
+.projets-parent{
+
+    display: flex;
+
+}
+
+.projets-titre {
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.projets-categories {
+
+    border-bottom: 3px solid black;
+}
+
+.projets-img {
+
+    width: 350px;
+    height: 240px;
+}
+
+.projets-base {
+
+    text-align: center;
+    border-radius: 0.5em;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 6px 8px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    
+}
+
+.projets-details {
+    margin: 5%;
+    display: none;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px rgba(5, 0, 0, 5);
+    padding: 20px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    animation: progress 2s ease-in-out forwards;
+
+}
+
+@keyframes progress {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.projets-secondary-img {
+
+    width: 450px;
+    height: 500px;
+    border: solid;
+}
+
+/* Fin projets css */

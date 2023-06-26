@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cv - Ducamp Jarod</title>
+</head>
+
+<body>
+    <!--Barre de navigation-->
+    <header>
+        <nav class="Bar-nav">
+            <li class="Bar-nav-items">Profil</li>
+            <li class="Bar-nav-items">Langages</li>
+            <li class="Bar-nav-items">Framework</li>
+            <li class="Bar-nav-items">Compétences</li>
+            <li class="Bar-nav-items">Projets</li>
+
+        </nav>
+
+    </header>
+    <!--Fin barre de navigation-->
+
+    <!--Profil-->
+    <section class="profil">
+        <h1 class="profil-titre">
+            Profil
+        </h1>
+        <div class="profil-container">
+            <img class="profil-img-pp" src="assets/Photo_Profils.jpg" alt="photo de moi">
+
+            <p class="profil-text">
+                Bonjour je suis Jarod Ducamp, développeur web junior. Passionné par le développement et doté d'une
+                solide formation,
+                je suis enthousiaste et créatif,
+                cherchant à acquérir de l'expérience et à contribuer à des projets innovants.
+                Prêt à relever de nouveaux défis,
+                je suis déterminé à développer des solutions technologiques de qualité pour répondre aux besoins des
+                utilisateurs et
+                améliorer l'expérience en ligne.
+
+                <br>
+
+                <!--Voir plus sur mon profil-->
+                <a href="#">
+                    <button class="profil-btn">
+                        Voir plus
+                    </button>
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+    <!--Fin profil-->
+
+    <!--Langages connue-->
+    <section class="Langages">
+        <h1 class="langages-titre">
+            Langages
+
+        </h1>
+        <ul class="langages-parent-cercle">
+            <li class="langages-cercle">
+                <span class="langages-icone">
+                    <i class="fa-brands fa-html5"></i>
+
+                </span>
+                <span class="langages-numero">85 %</span>
+
+            </li>
+            <li class="langages-cercle">
+                <span class="langages-icone">
+                    <i class="fa-brands fa-css3-alt"></i>
+
+                </span>
+                <span class="langages-numero">75 %</span>
+
+            </li>
+            <li class="langages-cercle">
+                <span class="langages-icone">
+                    <i class="fa-brands fa-js"></i>
+
+                </span>
+                <span class="langages-numero">75 %</span>
+
+            </li>
+            <li class="langages-cercle">
+                <span class="langages-icone">
+                    <i class="fa-brands fa-php"></i>
+
+                </span>
+                <span class="langages-numero">83 %</span>
+
+            </li>
+            <li class="langages-cercle">
+                <span class="langages-icone">
+                    <i class="fa-brands fa-java"></i>
+
+                </span>
+                <span class="langages-numero">50 %</span>
+
+            </li>
+        </ul>
+
+    </section>
+    <!--Fin Langages-->
+
+    <!--Framework-->
+    <section class="framework">
+        <h1 class="framework-titre">
+            Framework
+
+        </h1>
+        <div class="framework-parent">
+
+            <!--Boostrap barre de progression-->
+            <i class="fa-brands fa-bootstrap framework-icone"></i>
+            <span class="framework-icone">Boostrap</span>
+            <div class="framework-base">
+                <div class="framework-barre" style="width: 85%" data-perc="85%">
+                    <div class="framework-text">
+                        85%
+                    </div>
+                </div>
+            </div>
+
+            <!--Symfony barre de progression-->
+            <i class="fa-brands fa-symfony framework-icone"></i>
+            <span class="framework-icone">Symfony</span>
+            <div class="framework-base">
+                <div class="framework-barre" style="width: 75%" data-perc="75%">
+                    <div class="framework-text">
+                        75%
+                    </div>
+                </div>
+            </div class="framework-base">
+
+            <!--React barre de progression-->
+            <i class="fa-brands fa-react framework-icone"></i>
+            <span class="framework-icone">React</span>
+            <div class="framework-base">
+                <div class="framework-barre" style="width: 50%" data-perc="50%">
+                    <div class="framework-text">
+                        50%
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Fin framework-->
+
+    <!--Competences-->
+    <section class="competences">
+        <h1 class="competences-titre">
+            Compétences
+
+        </h1>
+
+        <div class="competences-parent">
+
+
+
+
+        </div>
+
+    </section>
+    <!--Fin competences-->
+
+    <!--Projets-->
+    <section class="projets">
+        <h1 class="projets-titre">
+            Projets
+
+        </h1>
+
+        <h2 class="projets-categories">HTML/CSS/JS</h2>
+        <div class="projets-parent">
+            <div class="projets-slide" id="projet1">
+                <div class="projets-base" onclick="Details('projet1')">
+                    <img class="projets-img" src="/assets/projets/Pyramide_2.png" alt="Projet 1">
+                    <h2 class="projets-secondary-titre">
+                        Projet InfinitePyramide
+
+                    </h2>
+                    <p class="projets-description">
+                        Projet perso ou le but était de faire un élément 3d qui tourne a l'infini.
+                        <br>
+                        liens CodePen : <a href="https://codepen.io/GispsyD/pen/rNQWKMd">InfinitePyramid</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="projets-details" id="detailsProjet1">
+                <h2 class="projets-secondary-titre">
+                    Projet InfinitePyramide
+                </h2>
+                <img class="projets-secondary-img" src="/assets/projets/Pyramid_3d.gif" alt="Projet 1">
+                <p class="projets-description">
+                    Projet perso ou le but était de faire un élément 3d qui tourne a l'infini.
+                    <br><br>
+                    liens CodePen : <a href="https://codepen.io/GispsyD/pen/rNQWKMd">InfinitePyramid</a>
+                </p>
+                <button onclick="Retour('detailsProjet1')" class="profil-btn">
+                    Fermer
+                </button>
+            </div>
+            <!--Fin HTML/CSS/JS-->
+
+            <!--Java-script-->
+            <div class="projets-slide" id="projet2">
+                <div class="projets-base" onclick="Details('projet2')">
+                    <img class="projets-img" src="/assets/projets/Formulaire.png" alt="Projet 2">
+                    <h2 class="projets-secondary-titre">
+                        Verification de formulaire
+
+                    </h2>
+                    <p class="projets-description">
+                        Formulaire de contact avec verification de chaque champs du formulaire.
+                        <br>
+                        liens CodePen : <a href="https://codepen.io/GispsyD/pen/poQRwEZ">Verification de formulaire</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="projets-details" id="detailsProjet2">
+                <h2 class="projets-secondary-titre">
+                    Verification de formulaire
+                </h2>
+                <img class="projets-secondary-img" src="assets/projets/Formulaire_2.png" alt="Projet 2">
+                <p class="projets-description">
+                    Verification de formulaire en java-scripts grâce au regex.
+                    <br><br>
+                    liens CodePen : <a href="https://codepen.io/GispsyD/pen/poQRwEZ">Verification formulaire</a>
+                </p>
+                <button onclick="Retour('detailsProjet2')" class="profil-btn">
+                    Fermer
+                </button>
+            </div>
+
+        </div>
+
+        
+
+    </section>
+    <!--Fin projets-->
+
+</body>
+
+
+<script src="https://kit.fontawesome.com/907a1ca8cf.js" crossorigin="anonymous"></script>
+<script src="../js/index.js"></script>
+
+</html>

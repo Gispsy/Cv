@@ -71,7 +71,6 @@ body {
 
 .profil-container {
 
-    display: flex;
     width: 100%;
     overflow: hidden;
     padding-bottom: 3%;
@@ -80,7 +79,7 @@ body {
 .profil-img-pp {
 
     margin: 20px;
-    max-width: 40%;
+    max-width: 20%;
     max-height: 15%;
     border-radius: 50%;
 }
@@ -93,6 +92,8 @@ body {
         'Open Sans',
         'Helvetica Neue',
         sans-serif;
+    font-size: x-large;
+
 }
 
 .profil-btn {
@@ -103,6 +104,66 @@ body {
     width: 250px;
     border-radius: 10px;
     margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.profil-btn-close{
+
+    background-color: rgb(180, 180, 180);
+    border-radius: 15%;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.profil-btn-liens {
+    text-decoration: none;
+
+}
+
+.profil-QrCode-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil-QrCode-img {
+    max-width: 15%;
+    max-height: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+
+}
+
+.profil-QrCode-git {
+
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+}
+
+.profil-QrCode-codepen {
+
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+
 }
 
 .profil-btn:hover {
@@ -177,7 +238,7 @@ body {
 .langages-numero {
 
     position: absolute;
-    opacity: 0;
+    opacity: 1;
 }
 
 .langages-cercle:hover .langages-numero {
@@ -188,7 +249,7 @@ body {
 
 .langages-cercle:hover .langages-icone {
 
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.5s;
     animation: spin 2s linear infinite;
 
@@ -295,7 +356,7 @@ body {
     background: #330033;
     height: 2em;
     border-radius: 0.5em;
-    animation: progress-animation 3s ease-in-out forwards;
+    animation: progress-animation 5s ease-in-out forwards;
     /* Utilisation de l'animation */
 
 }
@@ -317,6 +378,15 @@ body {
     margin-top: 25px;
 
 
+}
+
+.competences-parent{
+    margin: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
 }
 
 .competences-titre {
@@ -345,7 +415,7 @@ body {
 
 }
 
-.projets-parent{
+.projets-parent {
 
     display: flex;
 
@@ -386,7 +456,7 @@ body {
     padding: 20px;
     margin-left: 50px;
     margin-bottom: 5px;
-    
+
 }
 
 .projets-details {

@@ -45,13 +45,24 @@
                 <br>
 
                 <!--Voir plus sur mon profil-->
-                <a href="#">
-                    <button class="profil-btn">
-                        Voir plus
-                    </button>
+                <a href="#" class="profil-btn-liens">
+                    <button class="profil-btn" onclick="Voir()" id="profil-btn-voir">
                 </a>
+                Voir plus
+                </button>
             </p>
-
+            <br>
+<div class="profil-QrCode-container">
+        
+            <div id="github" class="profil-QrCode-git">
+                Github
+                <img src="/assets/projets/qr-code_Github.png" class="profil-QrCode-img" alt="github" id="img-git">
+            </div>
+            <div id="codepen" class="profil-QrCode-codepen">
+                CodePen
+                <img src="/assets/projets/qr-code_CodePen.png" class="profil-QrCode-img" alt="codepen" id="img-codepen">
+            </div>
+            <button onclick="Fermer()" id="profil-btn-close" class="profil-btn-close"> Fermer </button>
         </div>
 
     </section>
@@ -69,7 +80,7 @@
                     <i class="fa-brands fa-html5"></i>
 
                 </span>
-                <span class="langages-numero">85 %</span>
+                <span class="langages-numero"></span>
 
             </li>
             <li class="langages-cercle">
@@ -77,7 +88,15 @@
                     <i class="fa-brands fa-css3-alt"></i>
 
                 </span>
-                <span class="langages-numero">75 %</span>
+                <span class="langages-numero"></span>
+
+            </li>
+            <li class="langages-cercle">
+                <span class="langages-icone">
+                    <i class="fa-brands fa-sql">SQL</i>
+
+                </span>
+                <span class="langages-numero"></span>
 
             </li>
             <li class="langages-cercle">
@@ -85,7 +104,7 @@
                     <i class="fa-brands fa-js"></i>
 
                 </span>
-                <span class="langages-numero">75 %</span>
+                <span class="langages-numero"></span>
 
             </li>
             <li class="langages-cercle">
@@ -93,7 +112,7 @@
                     <i class="fa-brands fa-php"></i>
 
                 </span>
-                <span class="langages-numero">83 %</span>
+                <span class="langages-numero"></span>
 
             </li>
             <li class="langages-cercle">
@@ -101,7 +120,7 @@
                     <i class="fa-brands fa-java"></i>
 
                 </span>
-                <span class="langages-numero">50 %</span>
+                <span class="langages-numero"></span>
 
             </li>
         </ul>
@@ -113,46 +132,34 @@
     <section class="framework">
         <h1 class="framework-titre">
             Framework
-
         </h1>
         <div class="framework-parent">
-
-            <!--Boostrap barre de progression-->
+            <!-- Bootstrap barre de progression -->
             <i class="fa-brands fa-bootstrap framework-icone"></i>
             <span class="framework-icone">Boostrap</span>
             <div class="framework-base">
-                <div class="framework-barre" style="width: 85%" data-perc="85%">
-                    <div class="framework-text">
-                        85%
-                    </div>
+                <div class="framework-barre" style="width: 100%" data-perc="100%">
                 </div>
             </div>
 
-            <!--Symfony barre de progression-->
+            <!-- Symfony barre de progression -->
             <i class="fa-brands fa-symfony framework-icone"></i>
             <span class="framework-icone">Symfony</span>
             <div class="framework-base">
-                <div class="framework-barre" style="width: 75%" data-perc="75%">
-                    <div class="framework-text">
-                        75%
-                    </div>
-                </div>
-            </div class="framework-base">
-
-            <!--React barre de progression-->
-            <i class="fa-brands fa-react framework-icone"></i>
-            <span class="framework-icone">React</span>
-            <div class="framework-base">
-                <div class="framework-barre" style="width: 50%" data-perc="50%">
-                    <div class="framework-text">
-                        50%
-                    </div>
+                <div class="framework-barre" style="width: 100%" data-perc="100%">
                 </div>
             </div>
 
+            <!-- React barre de progression -->
+            <i class="fa-brands fa-react framework-icone"></i>
+            <span class="framework-icone">React</span>
+            <div class="framework-base">
+                <div class="framework-barre" style="width: 100%" data-perc="100%">
+                </div>
+            </div>
         </div>
-
     </section>
+
     <!--Fin framework-->
 
     <!--Competences-->
@@ -163,8 +170,22 @@
         </h1>
 
         <div class="competences-parent">
-
-
+            <h2>Figma</h2>
+            <p>Utilisation de figma et de ses outils pour la construction de maquette</p>
+            <br>
+            <h2>Looping</h2>
+            <p>Utilisation de Looping et de tout ses outils pour la réalisation du schema de la Base de donnée</p>
+            <br>
+            <h2>UML</h2>
+            <p>Réalisation de l'UML pour projet (ShopMaquette : <a href="https://github.com/Gispsy/ShopMaquette">
+                liens
+            </a>)</p>
+            <br>
+            <h2>MVC</h2>
+            <p>Réalisation du MVC (Model vue controller) pour projet (ShopMaquette : <a href="https://github.com/Gispsy/ShopMaquette">
+                liens
+            </a>)</p>
+            <br>
 
 
         </div>
@@ -212,7 +233,7 @@
             </div>
             <!--Fin HTML/CSS/JS-->
 
-            <!--Java-script-->
+            <!--Java-script code-->
             <div class="projets-slide" id="projet2">
                 <div class="projets-base" onclick="Details('projet2')">
                     <img class="projets-img" src="/assets/projets/Formulaire.png" alt="Projet 2">
@@ -244,16 +265,85 @@
             </div>
 
         </div>
+        <h2 class="projets-categories">Symfony</h2>
+        <div class="projets-parent">
 
-        
+            <div class="projets-slide" id="projet3">
+                <div class="projets-base" onclick="Details('projet3')">
+                    <img class="projets-img" src="/assets/projets/ShopMAquette_1.png" alt="projetShopMaquette">
+                    <h2 class="projets-secondary-titre">
+                        Projet ShopMaquette
+
+                    </h2>
+                    <p class="projets-description">
+                        Fil rouge de ma formation en concepteur developpeur web.
+                        <br>
+                        liens : <a href="https://gispsy.amorce.org/">ShopMaquette</a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="projets-details" id="detailsProjet3">
+                <h2 class="projets-secondary-titre">
+                    ShopMaquette
+                </h2>
+                <img class="projets-secondary-img" src="assets/projets/ShopMAquette_1.png" alt="detailsShopMaquette">
+                <p class="projets-description">
+                    Fil rouge de ma formation en concepteur developpeur web.
+                    C'est un e-commerce de vente de maquette gunpla en ligne.
+                    Avec differente categorie un CRUD et aussi un panier avec création et
+                    connexion d'un utilisateur dans la BDD.
+                    <br><br>
+                    liens : <a href="https://gispsy.amorce.org/">ShopMaquette</a>
+                </p>
+                <button onclick="Retour('detailsProjet3')" class="profil-btn">
+                    Fermer
+                </button>
+            </div>
+
+            <div class="projets-slide" id="projet4">
+                <div class="projets-base" onclick="Details('projet4')">
+                    <img class="projets-img" src="/assets/projets/SymRecipe_1.png" alt="projetShopMaquette">
+                    <h2 class="projets-secondary-titre">
+                        Projet SymRecipe
+
+                    </h2>
+                    <p class="projets-description">
+                        Projet suivie sur youtube pour apprendre les base Symfony
+                        <br>
+                        liens vidéo : <a
+                            href="https://www.youtube.com/watch?v=3K6oBiQK8aA&ab_channel=D%C3%A9veloppeurMuscl%C3%A9">
+                            Symrecipe
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+            <div class="projets-details" id="detailsProjet4">
+                <h2 class="projets-secondary-titre">
+                    SymRecipe
+                </h2>
+                <img class="projets-secondary-img" src="/assets/projets/SymRecipe_1.png" alt="detailsSymrecipe">
+                <p class="projets-description">
+
+                    <br><br>
+                    liens vidéo : <a
+                        href="https://www.youtube.com/watch?v=3K6oBiQK8aA&ab_channel=D%C3%A9veloppeurMuscl%C3%A9">
+                        Symrecipe
+                    </a>
+                </p>
+                <button onclick="Retour('detailsProjet4')" class="profil-btn">
+                    Fermer
+                </button>
+            </div>
+        </div>
+
+
 
     </section>
     <!--Fin projets-->
-
+    <script src="https://kit.fontawesome.com/907a1ca8cf.js" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
 </body>
-
-
-<script src="https://kit.fontawesome.com/907a1ca8cf.js" crossorigin="anonymous"></script>
-<script src="../js/index.js"></script>
 
 </html>

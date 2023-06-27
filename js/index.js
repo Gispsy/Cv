@@ -1,46 +1,42 @@
+
+function Voir() {
+    document.getElementById('github').style.display = 'block';
+    document.getElementById('img-git').style.display = 'block';
+    document.getElementById('codepen').style.display = 'block';
+    document.getElementById('img-codepen').style.display = 'block';
+    document.getElementById('profil-btn-close').style.display = 'block';
+    document.getElementById('profil-btn-voir').style.display = 'none';
+}
+
+function Fermer(){
+    document.getElementById('github').style.display = 'none';
+    document.getElementById('img-git').style.display = 'none';
+    document.getElementById('codepen').style.display = 'none';
+    document.getElementById('img-codepen').style.display = 'none';
+    document.getElementById('profil-btn-close').style.display = 'none';
+    document.getElementById('profil-btn-voir').style.display = 'block';
+
+}
+
 const projets = [
     { projetId: 'projet1', detailsId: 'detailsProjet1' },
     { projetId: 'projet2', detailsId: 'detailsProjet2' },
-
+    { projetId: 'projet3', detailsId: 'detailsProjet3' },
+    { projetId: 'projet4', detailsId: 'detailsProjet4' },
 ];
 
-const fonctionsProjets = {};
-
-projets.forEach((projets) => {
-    fonctionsProjets[projets.projetId] = function () {
-        Details(projets.projetId);
-    };
-
-    fonctionsProjets[projets.detailsId] = function () {
-        Retour(projets.detailsId, projets.projetId);
-    };
-});
-
 function Details(projetId) {
+    console.log("Début Details");
     console.log(projetId);
     document.getElementById(projetId).style.display = 'none';
-    document.getElementById('details' + projetId).style.display = 'block';
+    document.getElementById(projets.find(p => p.projetId === projetId).detailsId).style.display = 'block';
+    console.log("FIn Details");
 }
 
-function Retour(detailsId, projetId) {
+function Retour(detailsId) {
+    console.log("Début Retour");
     console.log(detailsId);
     document.getElementById(detailsId).style.display = 'none';
-    document.getElementById(projetId).style.display = 'block';
-}
-
-
-
-const projet1 = ["Pyramide_1.png", "Pyramide_2.png"];
-let numero = 0;
-
-function ChangeSlide(sens) {
-    numero = numero + sens;
-    if (numero < 0) {
-        numero = slide.length - 1;
-    }
-    if (numero > slide.length - 1) {
-        numero = 0;
-    }
-
-    document.getElementById("Projet1").src = slide[numero];
+    document.getElementById(projets.find(p => p.detailsId === detailsId).projetId).style.display = 'block';
+    console.log("FIn Retour");
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +7,30 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Cv - Ducamp Jarod</title>
 </head>
-
 <body>
     <!--Barre de navigation-->
-    <header>
+    <header id="up">
         <nav class="Bar-nav">
-            <li class="Bar-nav-items">Profil</li>
-            <li class="Bar-nav-items">Langages</li>
-            <li class="Bar-nav-items">Framework</li>
-            <li class="Bar-nav-items">Compétences</li>
-            <li class="Bar-nav-items">Projets</li>
-
+            <li class="Bar-nav-items"><a class="nav-liens" href="#profil">Profil</a></li>
+            <li class="Bar-nav-items"><a class="nav-liens" href="#langages">Langages</a></li>
+            <li class="Bar-nav-items"><a class="nav-liens" href="#framework">Framework</a></li>
+            <li class="Bar-nav-items"><a class="nav-liens" href="#competences">Compétences</a></li>
+            <li class="Bar-nav-items"><a class="nav-liens" href="#projets">Projets</a></li>
         </nav>
-
     </header>
     <!--Fin barre de navigation-->
-
+    <a href="#up" class="arrow-liens">
+        <div class="Arrow-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
     <!--Profil-->
-    <section class="profil">
+    <section class="profil" id="profil">
         <h1 class="profil-titre">
             Profil
         </h1>
         <div class="profil-container">
             <img class="profil-img-pp" src="assets/Photo_Profils.jpg" alt="photo de moi">
-
             <p class="profil-text">
                 Bonjour je suis Jarod Ducamp, développeur web junior. Passionné par le développement et doté d'une
                 solide formation,
@@ -41,35 +40,32 @@
                 je suis déterminé à développer des solutions technologiques de qualité pour répondre aux besoins des
                 utilisateurs et
                 améliorer l'expérience en ligne.
-
                 <br>
-
                 <!--Voir plus sur mon profil-->
                 <a href="#" class="profil-btn-liens">
                     <button class="profil-btn" onclick="Voir()" id="profil-btn-voir">
+                        Voir plus
+                    </button>
                 </a>
-                Voir plus
-                </button>
             </p>
             <br>
-<div class="profil-QrCode-container">
-        
-            <div id="github" class="profil-QrCode-git">
-                Github
-                <img src="/assets/projets/qr-code_Github.png" class="profil-QrCode-img" alt="github" id="img-git">
+            <div class="profil-QrCode-container">
+                <h2 id="github" class="profil-QrCode-git">
+                    Github
+                    <img src="/assets/projets/qr-code_Github.png" class="profil-QrCode-img" alt="github" id="img-git">
+                </h2>
+                <h2 id="codepen" class="profil-QrCode-codepen">
+                    CodePen
+                    <img src="/assets/projets/qr-code_CodePen.png" class="profil-QrCode-img" alt="codepen" id="img-codepen">
+                </h2>
+                <button onclick="Fermer()" id="profil-btn-close" class="profil-btn-close"> Fermer </button>
             </div>
-            <div id="codepen" class="profil-QrCode-codepen">
-                CodePen
-                <img src="/assets/projets/qr-code_CodePen.png" class="profil-QrCode-img" alt="codepen" id="img-codepen">
-            </div>
-            <button onclick="Fermer()" id="profil-btn-close" class="profil-btn-close"> Fermer </button>
         </div>
-
     </section>
     <!--Fin profil-->
 
     <!--Langages connue-->
-    <section class="Langages">
+    <section class="Langages" id="langages">
         <h1 class="langages-titre">
             Langages
 
@@ -129,7 +125,7 @@
     <!--Fin Langages-->
 
     <!--Framework-->
-    <section class="framework">
+    <section class="framework" id="framework">
         <h1 class="framework-titre">
             Framework
         </h1>
@@ -139,6 +135,7 @@
             <span class="framework-icone">Boostrap</span>
             <div class="framework-base">
                 <div class="framework-barre" style="width: 100%" data-perc="100%">
+                    <div class="framework-text">Chargement en cours </div>
                 </div>
             </div>
 
@@ -147,6 +144,7 @@
             <span class="framework-icone">Symfony</span>
             <div class="framework-base">
                 <div class="framework-barre" style="width: 100%" data-perc="100%">
+                    <div class="framework-text">Chargement en cours </div>
                 </div>
             </div>
 
@@ -155,15 +153,20 @@
             <span class="framework-icone">React</span>
             <div class="framework-base">
                 <div class="framework-barre" style="width: 100%" data-perc="100%">
+                    <div class="framework-text">Chargement en cours </div> 
                 </div>
             </div>
         </div>
+
+        <button class="framework-btn" onclick="reloadElements()">
+            Recharger les éléments
+        </button><br>
     </section>
 
     <!--Fin framework-->
 
     <!--Competences-->
-    <section class="competences">
+    <section class="competences" id="competences">
         <h1 class="competences-titre">
             Compétences
 
@@ -171,34 +174,42 @@
 
         <div class="competences-parent">
             <h2>Figma</h2>
-            <p>Utilisation de figma et de ses outils pour la construction de maquette</p>
+            <p>Utilisation de Figma et de ses outils pour la construction de maquettes</p>
             <br>
             <h2>Looping</h2>
-            <p>Utilisation de Looping et de tout ses outils pour la réalisation du schema de la Base de donnée</p>
+            <p>Utilisation de Looping et de tous ses outils pour la réalisation du schéma de la base de données</p>
             <br>
             <h2>UML</h2>
-            <p>Réalisation de l'UML pour projet (ShopMaquette : <a href="https://github.com/Gispsy/ShopMaquette">
-                liens
+            <p>Réalisation de l'UML pour le projet (ShopMaquette : <a href="https://github.com/Gispsy/ShopMaquette">
+                lien
             </a>)</p>
             <br>
             <h2>MVC</h2>
-            <p>Réalisation du MVC (Model vue controller) pour projet (ShopMaquette : <a href="https://github.com/Gispsy/ShopMaquette">
-                liens
+            <p>Réalisation du MVC (Modèle-Vue-Contrôleur) pour le projet (ShopMaquette : <a href="https://github.com/Gispsy/ShopMaquette">
+                lien
             </a>)</p>
+            <br>
+            <h2>Linux</h2>
+            <p>Utilisation d'Ubuntu pour le développement, utilisation du terminal Ubuntu pour installer tous les outils
+                nécessaires pour le codage
+            </p>
             <br>
 
 
         </div>
+        
 
     </section>
     <!--Fin competences-->
 
     <!--Projets-->
-    <section class="projets">
+    <section class="projets" id="projets">
         <h1 class="projets-titre">
             Projets
 
         </h1>
+
+        <p class="projets-description">Projet personnel ou pour du travail</p>
 
         <h2 class="projets-categories">HTML/CSS/JS</h2>
         <div class="projets-parent">
@@ -207,15 +218,13 @@
                     <img class="projets-img" src="/assets/projets/Pyramide_2.png" alt="Projet 1">
                     <h2 class="projets-secondary-titre">
                         Projet InfinitePyramide
-
                     </h2>
                     <p class="projets-description">
-                        Projet perso ou le but était de faire un élément 3d qui tourne a l'infini.
+                        Projet personnel où le but était de créer un élément 3D qui tourne à l'infini.
                         <br>
-                        liens CodePen : <a href="https://codepen.io/GispsyD/pen/rNQWKMd">InfinitePyramid</a>
+                        Liens CodePen : <a href="https://codepen.io/GispsyD/pen/rNQWKMd">InfinitePyramid</a>
                     </p>
                 </div>
-
             </div>
             <div class="projets-details" id="detailsProjet1">
                 <h2 class="projets-secondary-titre">
@@ -223,65 +232,59 @@
                 </h2>
                 <img class="projets-secondary-img" src="/assets/projets/Pyramid_3d.gif" alt="Projet 1">
                 <p class="projets-description">
-                    Projet perso ou le but était de faire un élément 3d qui tourne a l'infini.
+                    Projet personnel où le but était de créer un élément 3D qui tourne à l'infini.
                     <br><br>
-                    liens CodePen : <a href="https://codepen.io/GispsyD/pen/rNQWKMd">InfinitePyramid</a>
+                    Liens CodePen : <a href="https://codepen.io/GispsyD/pen/rNQWKMd">InfinitePyramid</a>
                 </p>
                 <button onclick="Retour('detailsProjet1')" class="profil-btn">
                     Fermer
                 </button>
             </div>
             <!--Fin HTML/CSS/JS-->
-
-            <!--Java-script code-->
+        
+            <!--JavaScript code-->
             <div class="projets-slide" id="projet2">
                 <div class="projets-base" onclick="Details('projet2')">
                     <img class="projets-img" src="/assets/projets/Formulaire.png" alt="Projet 2">
                     <h2 class="projets-secondary-titre">
-                        Verification de formulaire
-
+                        Vérification de formulaire
                     </h2>
                     <p class="projets-description">
-                        Formulaire de contact avec verification de chaque champs du formulaire.
+                        Formulaire de contact avec vérification de chaque champ du formulaire.
                         <br>
-                        liens CodePen : <a href="https://codepen.io/GispsyD/pen/poQRwEZ">Verification de formulaire</a>
+                        Liens CodePen : <a href="https://codepen.io/GispsyD/pen/poQRwEZ">Vérification de formulaire</a>
                     </p>
                 </div>
-
             </div>
             <div class="projets-details" id="detailsProjet2">
                 <h2 class="projets-secondary-titre">
-                    Verification de formulaire
+                    Vérification de formulaire
                 </h2>
                 <img class="projets-secondary-img" src="assets/projets/Formulaire_2.png" alt="Projet 2">
                 <p class="projets-description">
-                    Verification de formulaire en java-scripts grâce au regex.
+                    Vérification de formulaire en JavaScript grâce aux regex.
                     <br><br>
-                    liens CodePen : <a href="https://codepen.io/GispsyD/pen/poQRwEZ">Verification formulaire</a>
+                    Liens CodePen : <a href="https://codepen.io/GispsyD/pen/poQRwEZ">Vérification formulaire</a>
                 </p>
                 <button onclick="Retour('detailsProjet2')" class="profil-btn">
                     Fermer
                 </button>
             </div>
-
         </div>
         <h2 class="projets-categories">Symfony</h2>
         <div class="projets-parent">
-
             <div class="projets-slide" id="projet3">
                 <div class="projets-base" onclick="Details('projet3')">
                     <img class="projets-img" src="/assets/projets/ShopMAquette_1.png" alt="projetShopMaquette">
                     <h2 class="projets-secondary-titre">
                         Projet ShopMaquette
-
                     </h2>
                     <p class="projets-description">
-                        Fil rouge de ma formation en concepteur developpeur web.
+                        Fil rouge de ma formation en concepteur développeur web.
                         <br>
-                        liens : <a href="https://gispsy.amorce.org/">ShopMaquette</a>
+                        Liens : <a href="https://gispsy.amorce.org/">ShopMaquette</a>
                     </p>
                 </div>
-
             </div>
             <div class="projets-details" id="detailsProjet3">
                 <h2 class="projets-secondary-titre">
@@ -289,35 +292,32 @@
                 </h2>
                 <img class="projets-secondary-img" src="assets/projets/ShopMAquette_1.png" alt="detailsShopMaquette">
                 <p class="projets-description">
-                    Fil rouge de ma formation en concepteur developpeur web.
-                    C'est un e-commerce de vente de maquette gunpla en ligne.
-                    Avec differente categorie un CRUD et aussi un panier avec création et
+                    Fil rouge de ma formation en concepteur développeur web.
+                    C'est un e-commerce de vente de maquettes Gunpla en ligne.
+                    Avec différentes catégories, un CRUD et aussi un panier avec création et
                     connexion d'un utilisateur dans la BDD.
                     <br><br>
-                    liens : <a href="https://gispsy.amorce.org/">ShopMaquette</a>
+                    Liens : <a href="https://gispsy.amorce.org/">ShopMaquette</a>
                 </p>
                 <button onclick="Retour('detailsProjet3')" class="profil-btn">
                     Fermer
                 </button>
             </div>
-
             <div class="projets-slide" id="projet4">
                 <div class="projets-base" onclick="Details('projet4')">
                     <img class="projets-img" src="/assets/projets/SymRecipe_1.png" alt="projetShopMaquette">
                     <h2 class="projets-secondary-titre">
                         Projet SymRecipe
-
                     </h2>
                     <p class="projets-description">
-                        Projet suivie sur youtube pour apprendre les base Symfony
+                        Projet suivi sur YouTube pour apprendre les bases de Symfony.
                         <br>
-                        liens vidéo : <a
+                        Liens vidéo : <a
                             href="https://www.youtube.com/watch?v=3K6oBiQK8aA&ab_channel=D%C3%A9veloppeurMuscl%C3%A9">
                             Symrecipe
                         </a>
                     </p>
                 </div>
-
             </div>
             <div class="projets-details" id="detailsProjet4">
                 <h2 class="projets-secondary-titre">
@@ -325,9 +325,9 @@
                 </h2>
                 <img class="projets-secondary-img" src="/assets/projets/SymRecipe_1.png" alt="detailsSymrecipe">
                 <p class="projets-description">
-
+                    Projet suivi sur YouTube pour apprendre les bases de Symfony.
                     <br><br>
-                    liens vidéo : <a
+                    Liens vidéo : <a
                         href="https://www.youtube.com/watch?v=3K6oBiQK8aA&ab_channel=D%C3%A9veloppeurMuscl%C3%A9">
                         Symrecipe
                     </a>

@@ -4,6 +4,36 @@ body {
     background-color: rgb(62, 61, 61);
 }
 
+.Arrow-up{
+    position: fixed;
+    bottom: 8%; 
+    right: 5%; 
+    text-align: center;
+    width: 2%; 
+    height: 4%; 
+    line-height: 40%; 
+    background-color: #000; 
+    color: #fff; 
+    border-radius: 60%;
+    cursor: pointer;
+    z-index: 9999;
+
+}
+
+.Arrow-up:hover {
+    background-color: #555;
+}
+
+.Arrow-up i {
+    font-size: 120%;
+    margin-top: 25%;
+}
+
+.arrow-liens{
+    color: #fff;
+}
+
+
 /* Barre de navigation css */
 .Bar-nav {
 
@@ -18,6 +48,12 @@ body {
     /* Centre la flex box au milieu */
     border-radius: 10px;
     /* Arrondie les coins de 10 pixel */
+}
+
+.nav-liens{
+
+    text-decoration: none;
+    color: black;
 }
 
 .Bar-nav-items {
@@ -361,6 +397,14 @@ body {
 
 }
 
+.framework-barre.reset {
+    animation: none;
+}
+
+.framework-barre.relance {
+    animation: progress-animation 5s ease-in-out forwards;
+}
+
 /* Animation pour la progression */
 @keyframes progress-animation {
     0% {
@@ -368,6 +412,26 @@ body {
     }
 }
 
+.framework-btn{
+
+    background-color: rgb(180, 180, 180);
+    border-radius: 15%;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+.framework-btn:hover{
+
+    background-color: rgb(80, 58, 58);
+
+}
 /* Fin framework css */
 
 /* Compétences css */
@@ -494,3 +558,487 @@ body {
 }
 
 /* Fin projets css */
+
+/* pour les ecran */
+
+@media (max-width: 1024px) {
+
+    /* Body css */
+body {
+
+    background-color: rgb(62, 61, 61);
+}
+
+.Arrow-up{
+    position: fixed;
+    bottom: 8%; 
+    right: 4%; 
+    text-align: center;
+    width: 4%; 
+    height: 4%; 
+    line-height: 40%; 
+    background-color: #000; 
+    color: #fff; 
+    border-radius: 60%;
+    cursor: pointer;
+    z-index: 9999;
+
+}
+
+.Arrow-up:hover {
+    background-color: #555;
+}
+
+.Arrow-up i {
+    font-size: 120%;
+    margin-top: 25%;
+}
+
+.arrow-liens{
+    color: #fff;
+}
+
+
+/* Barre de navigation css */
+.Bar-nav {
+    list-style-type: none;
+    background-color: rgb(180, 180, 180);
+    margin: 2%;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+  }
+  
+  .nav-liens {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .Bar-nav-items {
+    margin: 5px;
+    font-size: xx-large;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .Bar-nav-items:hover {
+    background-color: rgb(80, 58, 58);
+    border-radius: 10px;
+  }
+
+
+/* Fin barre de navigation css */
+
+/* Profil css */
+
+.profil {
+
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+}
+
+.profil-titre {
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.profil-container {
+
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 3%;
+}
+
+.profil-img-pp {
+
+    margin: 20px;
+    max-width: 80%;
+    max-height: 15%;
+    border-radius: 50%;
+}
+
+.profil-text {
+
+    padding: 2%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+    font-size: x-large;
+    text-align: start;
+
+}
+
+.profil-btn {
+
+    background-color: rgb(180, 180, 180);
+    border-radius: 15%;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.profil-btn-close{
+
+    background-color: rgb(180, 180, 180);
+    border-radius: 15%;
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.profil-btn-liens {
+    text-decoration: none;
+
+}
+
+.profil-QrCode-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil-QrCode-img {
+    max-width: 50%;
+    max-height: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+
+}
+
+.profil-QrCode-git {
+
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+}
+
+.profil-QrCode-codepen {
+
+    display: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+
+}
+
+.profil-btn:hover {
+
+    background-color: rgb(80, 58, 58);
+}
+
+/* Fin profil css */
+
+/* Langages css */
+
+.Langages {
+
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.langages-titre {
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.langages-parent-cercle {
+
+    flex-direction: column;
+    /* Centre la flex box au milieu */
+    align-items: center;
+}
+
+.langages-cercle {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 20px;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+
+}
+
+.langages-icone {
+
+    opacity: 1;
+
+}
+
+.langages-cercle:hover .langages-numero {
+
+    opacity: 1;
+
+}
+
+.langages-cercle:hover .langages-icone {
+
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fin langages css */
+
+/* Framework css */
+
+.framework {
+    background-color: rgb(180, 180, 180);
+    margin-top: 25px;
+}
+
+.framework-titre {
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.framework-parent {
+    list-style-type: none;
+    align-items: center;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.framework-icone {
+    margin-left: 1%;
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.framework-text {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.framework-base {
+    align-items: center;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 90%;
+    height: 2em;
+    border-radius: 0.5em;
+    position: relative;
+    background: #f2f2f2;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.framework-barre {
+    position: relative;
+    font-size: 1em;
+    background: tomato;
+    height: 1em;
+    border-radius: 0.5em;
+    transition: width 0.5s ease-in-out;
+}
+
+.framework-base .framework-barre {
+    position: relative;
+    font-size: 1em;
+    background: #330033;
+    height: 2em;
+    border-radius: 0.5em;
+    animation: progress-animation 5s ease-in-out forwards;
+}
+
+.framework-barre.reset {
+    animation: none;
+}
+
+.framework-barre.relance {
+    animation: progress-animation 5s ease-in-out forwards;
+}
+
+/* Animation pour la progression */
+@keyframes progress-animation {
+    0% {
+        width: 0;
+    }
+}
+/* Fin framework css */
+
+/* Compétences css */
+
+.competences {
+
+    background-color: rgb(180, 180, 180);
+    margin-top: 25px;
+
+
+}
+
+.competences-parent{
+    margin: 2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+.competences-titre {
+
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+/* Fin compétences css */
+
+/* Projets css */
+
+.projets {
+    background-color: rgb(180, 180, 180);
+    margin-top: 25px;
+    padding: 5%;
+}
+
+.projets-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projets-titre {
+    font-size: 45px;
+    text-align: left;
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+
+.projets-categories {
+    border-bottom: 3px solid black;
+}
+
+.projets-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.projets-base {
+    text-align: center;
+    border-radius: 0.5em;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 6px 8px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.projets-details {
+    margin: 5%;
+    display: none;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px rgba(5, 0, 0, 5);
+    padding: 20px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    animation: progress 2s ease-in-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.projets-secondary-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border: solid;
+}
+
+}
